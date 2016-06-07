@@ -1,0 +1,52 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-top: 20px;
+}
+
+select, /*made select menu and buttons easier to see*/
+button {
+    color: white;
+    background-color: #316154;
+}
+
+button {
+    margin-top: 15px;
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+
+}
