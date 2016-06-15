@@ -29,19 +29,55 @@ legend {
 
 input[type="text"],
 input[type="email"] {
-    margin-top: 20px;
+    margin-top: 23px;
+    border: 3px solid transparent;
 }
 
-select, /*made select menu and buttons easier to see*/
+select, /*made select menu and buttons easier to see in Chrome*/
 button {
     color: white;
     background-color: #316154;
 }
 
+label[for="song"],
+label[for="albums"] {
+    margin: 20px 0 15px;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+input[type="radio"]:nth-of-type(1) {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+textarea {
+    border: 3px solid transparent;
+}
+
+
 button {
     margin-top: 15px;
 }
 
+/*Focus States*/
+
+input:focus,
+textarea:focus {
+	outline: 0;
+    border: 3px solid #4B7A6A;
+    background-color: #f9b677;
+    /*prefixed for really old old browsers*/
+    -webkit-transition:  all 0.3s ease-in-out; 
+    transition:  all 0.3s ease-in-out;
+}
+
+select:focus {
+    background-color: #316154;
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
