@@ -112,11 +112,10 @@ header .name{
   border-color: #96731A;
 }
 
-
 .photo{
   display: block;
   width: 200px;
-  height: auto;
+  height: 0%;
   margin: 0 auto;
 }
 
@@ -236,10 +235,10 @@ a.social:hover {
     max-width: 1000px;
   }
 
-  .photo {
-    min-width: 200px;
-    margin: 20px 30px;
-  }
+.photo{
+  width: 30%;
+  margin: 20px 30px;
+} /*images are too tall in Firefox and idk why*/
 
   .information{
     text-align: left;
